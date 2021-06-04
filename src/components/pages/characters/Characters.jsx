@@ -48,11 +48,6 @@ function Characters() {
   getAllByName(name)  
   }, [name])
 
-  // получаем значение имени из формы поиска
-  useEffect(()=>{
-    console.log(currentData)  
-  }, [currentData])
-
   useEffect(()=>{
     if(data) {setCurrentData(data.results)}
   }, [data])
