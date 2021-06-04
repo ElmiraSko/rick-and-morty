@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     media: {
       height: 0,
     //   paddingTop: '56.25%', // 16:9
-      paddingTop: '86%', // 16:9
+      paddingTop: '86%', 
     },
     link: {
       textDecoration: 'none',
@@ -23,10 +23,11 @@ const useStyles = makeStyles((theme) => ({
       color: 'black',
     }
   }));
+
   
-    
-export default function CharacterItem(props) {
-    
+
+export default function CharacterItem(props) { 
+
     const classes = useStyles();
     const characterItem = props.itemValues
     

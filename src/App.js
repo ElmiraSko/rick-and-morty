@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { QueryClient, QueryClientProvider } from "react-query";
 import Characters from './components/pages/characters/Characters'

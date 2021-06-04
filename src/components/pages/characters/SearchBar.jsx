@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { Formik, Field, Form } from "formik";
 
@@ -12,14 +13,16 @@ export default function SearchBar(props) {
        onSubmit={(values) => {
         nameHandler(JSON.stringify(values.name))  
        }}
+       onReset= {(values) => {
+        nameHandler(JSON.stringify(values.name))
+       }}
      >
        {() => (
          <Form>
-           <label>Name: </label>
+           <label>Имя: </label>
            <Field type="text" name="name" />
-           <button type="submit"> 
-            Поиск
-           </button>
+           <button type="submit"> Поиск </button>
+           <button type="reset"> Очистить </button>
          </Form>
        )}
      </Formik><br />
