@@ -18,8 +18,9 @@ export default function Footer() {
     return(
         <div className={classes.footer}>
             <div>
-                {'Character '}
-                {new Date().getFullYear()}
+            {'© '}
+            {new Date().getFullYear()}
+            {' Rick and Morty'}               
             </div>
         </div>
     )
